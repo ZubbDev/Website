@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Under Development | Zubb</title>
+  <title>404 Not Found | Zubb</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      /* background-color: black;
-      transition: background-color 0.5s; */
     }
     .content {
       text-align: center;
@@ -23,16 +21,6 @@
       font-size: 18px;
       margin-bottom: 30px;
     }
-
-    /* body.light {
-      background-color: white;
-      color: black
-    }
-
-    body.dark {
-      background-color: black;
-      color: white
-    } */
 
     .nav-style {
       margin: 0;
@@ -89,15 +77,30 @@
     .navbar .right.active a {
       padding: 1em 0;
     }
-    .link {
-      text-decoration: none;
-      color: #1a73e8;
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 144px;
+      align-self: center;
       transition: 0.2s;
     }
-    .link:hover {
-      color: #144d97;
-      text-decoration: underline;
+    button:hover {
+      background-color: #555;
       transition: 0.2s;
+    }
+    .link {
+        text-decoration: none;
+        color: #1a73e8;
+        transition: 0.2s;
+    }
+    .link:hover {
+        color: #144d97;
+        text-decoration: underline;
+        transition: 0.2s;
     }
 
     /* Media queries */
@@ -122,22 +125,6 @@
         margin-right: 1em;
       }
     }
-    
-    /* #theme-toggle {
-      background-image: url('Icon/LightDarkModeSwitch/light_dark_mode_switch.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: 0.5s;
-    }
-
-    #theme-toggle:hover {
-      opacity: 0.8;
-      transition: 0.5s;
-    } */
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,7 +133,7 @@
   <div class="navbar-style">
     <nav class="navbar">
         <div class="left">
-          <a href="/">Zubb</a>
+            <a href="/">Zubb</a>
             <div class="hamburger" onclick="toggleMenu()">
               <div></div>
               <div></div>
@@ -160,16 +147,14 @@
             <a href="/tos">Terms of Service</a>
             <a href="/privacy">Privacy Policy</a>
             <a href="https://key.name.my" target="key.name.my">Personal Website</a>
-            <!-- <button id="theme-toggle"></button> -->
         </div>
     </nav>
 </div>
   
 <div class="content">
-  <h1>Website Under Development</h1>
-    <p>The website is currently under development. Apologize for the inconvenience.</p>
-    <p>Check back soon for the new and improved website!</p>
-    <p>In the meantime, you can contact us at <a href="mailto:contact@zubb.key.name.my" class="link">contact@zubb.key.name.my</a> for any inquiries.</p>
+  <h1>404 Not Found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+    <button onclick="window.location.href = '/'">Go To Main Page</button>
   <footer>
     <center>
       <p>&copy; 2024 <a href="/" class="link">Zubb</a>/<a href="https://key.name.my" target="https://key.name.my" class="link">ItzKeyYT</a></p>
@@ -180,24 +165,6 @@
       const rightMenu = document.querySelector('.navbar .right');
       rightMenu.classList.toggle('active');
     }
-    // const toggleButton = document.getElementById('theme-toggle');
-    // const bodyElement = document.body;
-
-    // bodyElement.classList.add('dark');
-
-    // let isDarkMode = true;
-
-    // toggleButton.addEventListener('click', () => {
-    //   if (isDarkMode) {
-    //     bodyElement.classList.remove('dark');
-    //     bodyElement.classList.add('light');
-    //     isDarkMode = false;
-    //   } else {
-    //     bodyElement.classList.remove('light');
-    //     bodyElement.classList.add('dark');
-    //     isDarkMode = true;
-    //   }
-    // });
   </script>
 </div>
 </body>
